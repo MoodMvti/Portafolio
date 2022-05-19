@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: #000000;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Cellipse fill='none' stroke-width='200' id='a' rx='600' ry='450'/%3E%3C/defs%3E%3Cg style='transform-origin:center'%3E%3Cg transform='' style='transform-origin:center'%3E%3Cg transform='rotate(-160 0 0)' style='transform-origin:center'%3E%3Cg transform='translate(1000 750)'%3E%3Cuse stroke='%2327002B' href='%23a' transform='rotate(-60 0 0) scale(0.4)'/%3E%3Cuse stroke='%23340035' href='%23a' transform='rotate(-50 0 0) scale(0.5)'/%3E%3Cuse stroke='%233e0039' href='%23a' transform='rotate(-40 0 0) scale(0.6)'/%3E%3Cuse stroke='%2348003c' href='%23a' transform='rotate(-30 0 0) scale(0.7)'/%3E%3Cuse stroke='%2352003d' href='%23a' transform='rotate(-20 0 0) scale(0.8)'/%3E%3Cuse stroke='%235b003c' href='%23a' transform='rotate(-10 0 0) scale(0.9)'/%3E%3Cuse stroke='%2365003a' href='%23a' transform=''/%3E%3Cuse stroke='%236e0036' href='%23a' transform='rotate(10 0 0) scale(1.1)'/%3E%3Cuse stroke='%23780030' href='%23a' transform='rotate(20 0 0) scale(1.2)'/%3E%3Cuse stroke='%23820028' href='%23a' transform='rotate(30 0 0) scale(1.3)'/%3E%3Cuse stroke='%238b001f' href='%23a' transform='rotate(40 0 0) scale(1.4)'/%3E%3Cuse stroke='%23950015' href='%23a' transform='rotate(50 0 0) scale(1.5)'/%3E%3Cuse stroke='%239f0008' href='%23a' transform='rotate(60 0 0) scale(1.6)'/%3E%3Cuse stroke='%23a80600' href='%23a' transform='rotate(70 0 0) scale(1.7)'/%3E%3Cuse stroke='%23b21600' href='%23a' transform='rotate(80 0 0) scale(1.8)'/%3E%3Cuse stroke='%23bc2700' href='%23a' transform='rotate(90 0 0) scale(1.9)'/%3E%3Cuse stroke='%23c53a00' href='%23a' transform='rotate(100 0 0) scale(2)'/%3E%3Cuse stroke='%23cf4f00' href='%23a' transform='rotate(110 0 0) scale(2.1)'/%3E%3Cuse stroke='%23d86500' href='%23a' transform='rotate(120 0 0) scale(2.2)'/%3E%3Cuse stroke='%23e27e00' href='%23a' transform='rotate(130 0 0) scale(2.3)'/%3E%3Cuse stroke='%23ec9700' href='%23a' transform='rotate(140 0 0) scale(2.4)'/%3E%3Cuse stroke='%23f5b300' href='%23a' transform='rotate(150 0 0) scale(2.5)'/%3E%3Cuse stroke='%23FFD000' href='%23a' transform='rotate(160 0 0) scale(2.6)'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-attachment: fixed;
+background-size: cover;
+}
+section{
+    margin-top: 200px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #27002B;
+    opacity: 0.9;
+  }
+  
+li {
+    float: left;
+  }
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: #111;
+  }
+#Me{
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    margin-top: 150px;
+}
+#Works-text{
+    margin-left: 45%;
+    color: aliceblue;
+}
+
+.wrap{
+    width: 100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    
+
+}
+
+.tarjeta-wrap{
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+    
+}
+
+.tarjeta{
+    width: 300px;
+    height: 350px;
+    background: orange;
+    position: relative;
+    transform-style:preserve-3d;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    -moz-box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+  
+
+}
+
+.adelante, .atras{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.adelante{
+    width: 100%;
+}
+
+.atras{
+    transform: rotateY(180deg);
+    color: white;
+    text-align: center;
+    font-family: "open sans";
+}
+
+.tarjeta-wrap:hover .tarjeta{
+    transform: rotateY(180deg);
+    
+}
+.card1{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/1373/1373255.png);
+    background-size: cover;
+    background-position: center;
+}
+.card-body{
+    background-color: grey;
+}
+.Habi{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+#HabiText{
+    position: absolute;
+    top: 40%;
+    left: 31%;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+.Front{
+    position: relative;
+    display: table;
+    text-align: center;
+}
+#FrontText{
+    position: absolute;
+    top: 40%;
+    left: 37%;
+    font-size: 1em;
+    color: aliceblue;
+}
+#FrontImg{
+    width: 80%;
+    height: 80%;
+
+}
+.Back{
+    position: relative;
+    display: table;
+    text-align: center;
+    transform: translate(160%, -98%);
+}
+#BackText{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 1em;
+    color: aliceblue;
+}
+#BackImg{
+    width: 80%;
+    height: 80%;
+
+}
+.Desi{
+    position: relative;
+    display: table;
+    text-align: center;
+    transform: translate(310%, -195%);
+}
+#DesiText{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    font-size: 1em;
+    color: aliceblue;
+}
+#DesiImg{
+    width: 80%;
+    height: 80%;
+
+}
+#FrontLogo{
+    position: absolute;
+    height: 30%;
+    margin-left: 60px;
+    margin-top: 30px;
+
+}
